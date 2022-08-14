@@ -1,8 +1,10 @@
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 
 import 'package:watch_store/app/models/watch_color.dart';
+import 'package:watch_store/src/assets/images.dart';
 
 class Watch {
   final String name;
@@ -104,3 +106,28 @@ class Watch {
         review.hashCode;
   }
 }
+
+List<Watch> watchList = [
+  Watch(
+    name: 'Apple Watch',
+    series: 'Series 7',
+    price: 799,
+    image: kSeriesWatch7,
+    colors: [
+      WatchColor(
+        name: 'Chalk Pink',
+        color: const Color(0xFFF0DEC5),
+      ),
+      WatchColor(
+        name: 'Nectarine',
+        color: const Color(0xFFFFC8B7),
+      ),
+      WatchColor(
+        name: 'Eucalyptus',
+        color: const Color(0xFF5F8477),
+      ),
+    ],
+    description: '',
+    review: '',
+  )
+];
