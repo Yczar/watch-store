@@ -1,7 +1,7 @@
 name: watch_store
 description: A new Flutter project.
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: 'none' 
 version: 1.0.0+1
 
 environment:
@@ -13,6 +13,7 @@ dependencies:
 
 
   cupertino_icons: ^1.0.2
+  flutter_svg: ^1.1.3
 
 dev_dependencies:
   flutter_test:
@@ -22,3 +23,24 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/watches/
+    - assets/svgs/
+    - assets/svgs/home/
+    - assets/svgs/watches/
+
+  fonts:
+    - family: raleway
+      fonts:
+        - asset: fonts/raleway/Raleway-ExtraBold.ttf
+          weight: 800
+        - asset: fonts/raleway/Raleway-Black.ttf
+          weight: 700
+        - asset: fonts/raleway/Raleway-SemiBold.ttf
+          weight: 600
+        - asset: fonts/raleway/Raleway-Medium.ttf
+          weight: 500
+        - asset: fonts/raleway/Raleway-Regular.ttf
+          weight: 400
